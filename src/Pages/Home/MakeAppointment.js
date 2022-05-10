@@ -17,7 +17,7 @@ const MakeAppointment = () => {
         />
         <div className="text-white flex-1 lg:py-16 p-7">
           <p className="text-primary font-bold">Appointment</p>
-          <h1 class="text-5xl font-bold">Make an appointment Today</h1>
+          <h1 class="text-3xl font-bold">Make an appointment Today</h1>
           <p class="py-6">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
