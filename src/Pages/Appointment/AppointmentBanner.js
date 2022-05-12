@@ -2,10 +2,16 @@ import React from "react";
 import chair from "../../assets/images/chair.png";
 import { DayPicker } from "react-day-picker";
 import "react-day-picker/dist/style.css";
-
+import bg from "../../assets/images/bg.png";
 const AppointmentBanner = ({ date, setDate }) => {
   return (
-    <div class="hero lg:my-32 my-10">
+    <div
+      class="hero min-h-screen my-10"
+      style={{
+        background: `url(${bg})`,
+        backgroundSize: "cover",
+      }}
+    >
       <div class="hero-content flex-col lg:flex-row-reverse gap-12">
         <img
           src={chair}
