@@ -15,12 +15,12 @@ const ContactUs = () => {
         <input
           type="text"
           placeholder="Email Address"
-          class=" w-full py-2 px-5 rounded-xl focus:outline-none "
+          className=" w-full py-2 px-5 rounded-xl focus:outline-none "
         />
         <input
           type="text"
           placeholder="Subject"
-          class=" w-full py-2 px-5 rounded-xl focus:outline-none "
+          className=" w-full py-2 px-5 rounded-xl focus:outline-none "
         />
         <textarea
           className="w-full rounded-xl focus:outline-none px-5 py-2 h-[150px]"
