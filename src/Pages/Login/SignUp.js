@@ -8,6 +8,7 @@ import auth from "../../firebase.init";
 import { useForm } from "react-hook-form";
 import Loading from "../Shared/Loading";
 import { Link, useNavigate } from "react-router-dom";
+import useToken from "../../hooks/useToken";
 const SignUp = () => {
   const navigate = useNavigate();
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -21,12 +22,13 @@ const SignUp = () => {
     handleSubmit,
   } = useForm();
 
-  let signInError;
+  const [token] = useToken(user || gUser);
 
-  if (gUser || user) {
-    // navigate("/appointment");
+  if (token) {
+    navigate("/appointment");
   }
 
+  let signInError;
   if (error || gError || UpdateError) {
     signInError = (
       <p className="text-red-500 ">
